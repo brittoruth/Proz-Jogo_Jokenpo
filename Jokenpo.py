@@ -41,10 +41,10 @@ while partidaFinalizada == False:
           
           #Quem ganho a mão Acrua +1
         # precisa construir as condicionais
-    elif escolhaJogador == 0 and jogadorBot == 2:
-            scoreJogador = + 1
-        else:
-            scoreBot = + 1
+    if escolhaJogador == 0 and jogadorBot == 2:
+        scoreJogador = + 1
+    else:
+        scoreBot = + 1
 
 # se input atual máquina ou jogador  == input máquina ou jogador anterior não permitir jogada
 # *Este jogo possui uma única regra: não é permitido mostrar pedra duas vezes seguidas*
