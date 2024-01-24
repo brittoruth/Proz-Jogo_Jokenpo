@@ -43,7 +43,14 @@ while partidaFinalizada == False:
         # precisa construir as condicionais
     if escolhaJogador == 0 and jogadorBot == 2:
         scoreJogador = + 1
-    else:
+        
+    if escolhaJogador == 0 and jogadorBot == 1:
+        scoreBot = + 1
+    
+    if escolhaJogador == 1 and jogadorBot == 0:
+        scoreJogador = + 1
+
+    if escolhaJogador == 1 and jogadorBot == 2:
         scoreBot = + 1
 
 # se input atual máquina ou jogador  == input máquina ou jogador anterior não permitir jogada
