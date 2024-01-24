@@ -22,40 +22,35 @@ scoreBot = 0
 partidaFinalizada = False
 
 while partidaFinalizada == False:
-    configuracaoMao = ["Pedra", "Papel", "Tesoura"]
+    configuracaoMao = {
+        0 : "Pedra",
+        1 : "Papel",
+        2 : "Tesoura" 
+    }
+
     jogadorBot = random.choice(configuracaoMao)
-    escolhaJogador = int(input("Informe sua configuração de mão: \n[0] Pedra \n[1] Papel \n[2] Tesoura \n>>>"))
-       
-    time.sleep(1)
+    escolhaJogador = int(input("Informe sua configuração de mão: \n[0] Pedra \n[1] Papel \n[2] Tesoura \n>>> "))
+   
+    #time.sleep(1)
     print("Jan")
-    time.sleep(1)
+    #time.sleep(1)
     print("Ken")
-    time.sleep(1)
+    #time.sleep(1)
     print("Pô!\n")
     print("Você jogou: "+ configuracaoMao[escolhaJogador])
     print("Seu oponente jogou "+ jogadorBot)
+
     if jogadorBot == configuracaoMao[escolhaJogador]: # se impatou repete round (mesma configuração)
         print("Empate. Vamos de novo!")
-    
-#Daqui pra baixo tá em contrução - parte de cima tá 100% funcionando
-          
-          #Quem ganho a mão Acrua +1
-        # precisa construir as condicionais
-    if escolhaJogador == 0 and jogadorBot == 2:
-        scoreJogador = + 1
         
-    if escolhaJogador == 0 and jogadorBot == 1:
-        scoreBot = + 1
-    
-    if escolhaJogador == 1 and jogadorBot == 0:
-        scoreJogador = + 1
 
-    if escolhaJogador == 1 and jogadorBot == 2:
-        scoreBot = + 1
+#Quem ganho a mão Acrua +1
+# precisa construir as condicionais
+    
 
 # se input atual máquina ou jogador  == input máquina ou jogador anterior não permitir jogada
 # *Este jogo possui uma única regra: não é permitido mostrar pedra duas vezes seguidas*
 
 
-
+#Daqui pra baixo tá em contrução - parte de cima tá 100% funcionando
 # repetir jogo até vitorioso +3 placar
