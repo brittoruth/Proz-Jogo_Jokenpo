@@ -1,0 +1,62 @@
+### **Descrição do Projeto "Pedra, Papel e Tesoura" em Python:**
+
+Descrição básica de um projeto em Python para criar o jogo "Pedra, Papel e Tesoura". Este projeto será interativo, permitindo que o usuário jogue contra o computador. Vamos dividir o projeto em funções principais e discutir algumas características importantes.
+
+### Funções Principais:
+
+**Função para Obter a Escolha do Usuário:**
+- Esta função deve receber a escolha do usuário como entrada (Pedra, Papel ou Tesoura).
+- Validar a entrada do usuário para garantir que seja uma escolha válida.
+
+```python
+def obter_escolha_usuario():
+    # Código para obter a escolha do usuário e validar a entrada
+    pass
+
+```
+
+**Função para Gerar a Escolha do Computador:**
+- Esta função deve gerar aleatoriamente a escolha do computador entre Pedra, Papel e Tesoura.
+
+```python
+import random
+def gerar_escolha_computador():
+    # Código para gerar aleatoriamente a escolha do computador
+    pass
+
+```
+
+**Função para Determinar o Vencedor:**
+- Esta função deve comparar as escolhas do usuário e do computador para determinar o vencedor.
+
+```python
+def determinar_vencedor(escolha_usuario, escolha_computador):
+    # Código para determinar o vencedor com base nas escolhas
+    pass
+
+```
+
+**Função Principal do Jogo:**
+- Esta função deve coordenar todo o jogo, chamando as funções anteriores.
+
+```python
+def jogar_pedra_papel_tesoura():
+    # Código para iniciar o jogo
+    pass
+
+```
+
+### Características Importantes:
+
+1. **Interface Amigável:**
+    - Apresentar mensagens claras para orientar o usuário durante o jogo.
+2. **Feedback do Resultado:**
+    - Fornecer feedback após cada rodada, mostrando as escolhas do usuário e do computador, além do resultado da rodada.
+3. **Contagem de Pontos:**
+    - Manter uma contagem de pontos para acompanhar a pontuação do jogador.
+4. **Loop de Jogo:**
+    - Permitir que o usuário jogue várias rodadas consecutivas até optar por sair.
+5. **Encerramento do Jogo:**
+    - Apresentar a pontuação final e uma mensagem de agradecimento ao encerrar o jogo.
+
+Agora podemos começar a implementar essas funções e adicionar detalhes adicionais conforme necessário. Este é um projeto básico, mas você pode expandi-lo adicionando recursos como uma interface gráfica, melhorando as mensagens, ou implementando uma lógica mais avançada para o jogo.
