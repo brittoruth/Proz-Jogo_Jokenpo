@@ -1,2 +1,5 @@
-# Proz-Jogo_Memoria
-Desafio ao vivo e a cores
+# Jokenpô
+
+## Grupo
+- Ruth Britto (líder)
+- 
