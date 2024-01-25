@@ -21,28 +21,33 @@ scoreJogador = 0
 scoreBot = 0
 partidaFinalizada = False
 
-while partidaFinalizada == False:
-    configuracaoMao = {
-        0 : "Pedra",
-        1 : "Papel",
-        2 : "Tesoura" 
-    }
+#while partidaFinalizada == False:
+configuracaoMao = {
+    0 : "Pedra",
+    1 : "Papel",
+    2 : "Tesoura" 
+}
 
-    jogadorBot = random.choice(configuracaoMao)
-    escolhaJogador = int(input("Informe sua configuração de mão: \n[0] Pedra \n[1] Papel \n[2] Tesoura \n>>> "))
-   
-    time.sleep(1)
-    print("Jan")
-    time.sleep(1)
-    print("Ken")
-    time.sleep(1)
-    print("Pô!\n")
-    print("Você jogou: "+ configuracaoMao[escolhaJogador])
-    print("Seu oponente jogou "+ jogadorBot)
+botRandom = random.randint(0,2)
+#jogadorBotMao = configuracaoMao[botRandom]
+print(type(botRandom))
+#print(type(jogadorBotMao))
 
-    if jogadorBot == configuracaoMao[escolhaJogador]: # se impatou repete round (mesma configuração)
-        print("Empate. Vamos de novo!")
-        
+
+escolhaJogador = int(input("Informe sua configuração de mão: \n[0] Pedra \n[1] Papel \n[2] Tesoura \n>>> "))
+print(type(escolhaJogador))
+
+time.sleep(1)
+print("Jan")
+time.sleep(1)
+print("Ken")
+time.sleep(1)
+print("Pô!\n")
+print("Você jogou: "+ configuracaoMao[escolhaJogador])
+print("Seu oponente jogou "+ configuracaoMao[botRandom])
+
+if botRandom == escolhaJogador: # se impatou repete round (mesma configuração)
+    print("Empate. Vamos de novo!")
 
 #Quem ganho a mão Acrua +1
 # precisa construir as condicionais
