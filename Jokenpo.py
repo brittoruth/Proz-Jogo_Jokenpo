@@ -65,5 +65,5 @@ while scoreJogador <3 or scoreBot <3:
         print("\nP-A-R-A-B-É-N-S!!!\nVocê GANHOU o jogo!!!! \nTente outra vez! Quem sabe nessa eu ganho de você ;)\n")
         break
 
-# Próximo MVP(2): *Este jogo possui uma única regra: não é permitido mostrar pedra duas vezes seguidas*
+# Próximo MVP(2): Opção de parar de jogar / *Este jogo possui uma única regra: não é permitido mostrar pedra duas vezes seguidas*
 # Próximo MVP(3): Adicionar tratamento de erros e exceções
